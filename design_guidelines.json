@@ -1,0 +1,237 @@
+{
+  "project_metadata": {
+    "title": "CA Yogesh Pannalal Trivedi — Independent Finance Review & Fractional CFO Landing Page",
+    "version": "v3.0",
+    "award_target": "Awwwards Site of the Day / FWA / CSS Design Awards",
+    "theme_strategy": "Editorial Swiss Luxury meets High-Precision Financial Engineering. Light cream background (#F8F7F4 / #F1EFE8) with deep navy (#042C53), architectural pine green (#0F6E56), and ice blue/mint dynamic accents (#E1F5EE, #85B7EB). Toggleable smooth dark mode supported."
+  },
+  "design_concepts_probability_matrix": [
+    {
+      "rank": 1,
+      "probability": "45%",
+      "concept_name": "The Editorial Swiss Ledger & Kinetic Architect",
+      "disciplines_fused": [
+        "Swiss Modernist Grid & Typography",
+        "High-End Financial Publishing (Financial Times / Monocle style)",
+        "Kinetic Scrollytelling & Precision Motion Graphics"
+      ],
+      "description": "Combines asymmetrical high-contrast grid structures with hyper-refined typography (Cinzel / Newsreader / Cabinet Grotesk), kinetic micro-line charts, tactile card outlines, and high-speed reveal choreography."
+    },
+    {
+      "rank": 2,
+      "probability": "25%",
+      "concept_name": "Architectural Concrete & Financial Audit Chamber",
+      "disciplines_fused": [
+        "Japanese Brutalist Architecture",
+        "Bank Vault Metallics & Precision Glass",
+        "Data Art Scrollytelling"
+      ],
+      "description": "Uses monolithic borderless cards, deep obsidian & dark navy contrasts, heavy metallic accents, and interactive audit scanners."
+    },
+    {
+      "rank": 3,
+      "probability": "15%",
+      "concept_name": "Botanical Precision & Treasury Analytics",
+      "disciplines_fused": [
+        "Botanical Print Aesthetics",
+        "Swiss Banking Heritage",
+        "Interactive Canvas Node Graphs"
+      ],
+      "description": "Integrates organic muted mint & sage tones with mathematical balance, vintage financial seals, and floating financial node diagrams."
+    },
+    {
+      "rank": 4,
+      "probability": "10%",
+      "concept_name": "Cyber-Tactical Executive Dashboard",
+      "disciplines_fused": [
+        "Tactical Command Center Interfaces",
+        "Dubai Futuristic Architecture",
+        "Glowing Data Streams"
+      ],
+      "description": "High-density grid layout with glowing neon telemetry, dark navy glassmorphism, and instant interactive audit calculators."
+    },
+    {
+      "rank": 5,
+      "probability": "5%",
+      "concept_name": "Minimalist Fine-Art Print Portfolio",
+      "disciplines_fused": [
+        "Art Gallery Monograph",
+        "High-Fashion Typography",
+        "Monochrome Photography"
+      ],
+      "description": "Ultra-spacious white space, massive headline typography with paper texture grain overlays and quiet luxury motion."
+    }
+  ],
+  "color_system": {
+    "archetype": "ORGANIC & SWISS HIGH-CONTRAST LUXURY",
+    "css_variables": {
+      "--bg-primary": "#F8F7F4",
+      "--bg-secondary": "#F1EFE8",
+      "--bg-card": "#FFFFFF",
+      "--bg-dark": "#042C53",
+      "--bg-dark-card": "#0A3966",
+      "--text-primary": "#042C53",
+      "--text-secondary": "#444441",
+      "--text-muted": "#5F5E5A",
+      "--brand-navy": "#042C53",
+      "--brand-green": "#0F6E56",
+      "--brand-mint": "#E1F5EE",
+      "--brand-ice-blue": "#85B7EB",
+      "--brand-ice-light": "#B5D4F4",
+      "--border-subtle": "#D3D1C7",
+      "--border-accent": "#0F6E56",
+      "--accent-gold": "#C5A059"
+    },
+    "guidelines": [
+      "Never use pure black #000000; use Deep Navy #042C53 for high-contrast text.",
+      "Background uses warm editorial light cream #F8F7F4 with section variations in #F1EFE8 and #042C53.",
+      "Primary call-to-action buttons use Deep Navy with Pine Green hover states or vice-versa.",
+      "Dark callout sections ('Automate the routine. Keep the judgement human.') use #042C53 background with crisp #E1F5EE mint typography."
+    ]
+  },
+  "typography": {
+    "headline_font": "Cabinet Grotesk / Cormorant Garamond / Newsreader",
+    "body_font": "Plus Jakarta Sans / DM Sans",
+    "mono_font": "JetBrains Mono",
+    "google_fonts_embed": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+    "hierarchy": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold tracking-tight leading-[1.08]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-serif font-bold tracking-tight text-[#042C53]",
+      "card_h3": "text-xl sm:text-2xl font-sans font-bold text-[#042C53]",
+      "eyebrow_label": "text-xs uppercase tracking-[0.25em] font-mono font-semibold text-[#0F6E56]",
+      "body_text": "text-base sm:text-lg font-sans text-[#444441] leading-relaxed",
+      "stat_number": "text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#042C53]"
+    }
+  },
+  "layout_and_grid": {
+    "spacing_philosophy": "Generous spacing system using p-8, p-12, py-24, py-32 for breathing room.",
+    "bento_grid_mode": "Tetris Grid Mode A (Asymmetrical tension for storytelling)",
+    "container_padding": "px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto",
+    "sections": [
+      {
+        "id": "hero",
+        "layout": "2-column dynamic split with kinetic text staggered mask-reveal on left and framed executive spotlight card on right."
+      },
+      {
+        "id": "marquee",
+        "layout": "Full-width editorial ribbon running slow continuous ticker with key capabilities & metrics."
+      },
+      {
+        "id": "stats_strip",
+        "layout": "4-column high-density stat counter grid with subtle vertical dividers and interactive hover depth."
+      },
+      {
+        "id": "intro_narrative",
+        "layout": "Editorial column with asymmetrical pull-quote and highlighted key phrases."
+      },
+      {
+        "id": "problems_solved",
+        "layout": "2x2 Bento Grid of problem cards with provocative question headers, mint tags, and hover reveal details."
+      },
+      {
+        "id": "where_value_added",
+        "layout": "3-column interactive feature card matrix with icon accents and live value metrics."
+      },
+      {
+        "id": "how_i_work",
+        "layout": "4-step horizontal timeline / accordion flow with step numbers (01 to 04)."
+      },
+      {
+        "id": "dark_automation_callout",
+        "layout": "Full-bleed Deep Navy banner with ambient radial glow, bold typography, and interactive AI model badges."
+      },
+      {
+        "id": "results_grid",
+        "layout": "3-column outcome cards with dynamic metric tags (e.g., '150+ to <120 days', '80% recovered')."
+      },
+      {
+        "id": "career_timeline",
+        "layout": "Vertical timeline with year badges (2009–2026), role titles, company scale, and expandable details."
+      },
+      {
+        "id": "credentials_and_tools",
+        "layout": "Split section: Left side credentials badge pill wall; Right side interactive tech stack matrix (ERPNext, PowerBI, Excel, Claude AI)."
+      },
+      {
+        "id": "cta_footer",
+        "layout": "High-impact booking section with direct contact cards, fast email copy button, and interactive financial health check drawer."
+      }
+    ]
+  },
+  "hero_reveal_choreography": {
+    "loader_duration": "1.2s signature unveil",
+    "sequence": [
+      "Step 1 (0.0s): Top sticky nav slides down smoothly with opacity 0 -> 1.",
+      "Step 2 (0.2s): Eyebrow 'Independent finance review · Fractional CFO · Dubai' fades in with horizontal line tracking.",
+      "Step 3 (0.4s): H1 Headline reveals phrase by phrase using clip-path overflow hidden mask.",
+      "Step 4 (0.7s): Subtitle paragraph and CTA button group stagger up with spring dynamics.",
+      "Step 5 (0.9s): Right-side executive photo frame expands from 0.95 scale with a warm gold & pine green spotlight border accent."
+    ]
+  },
+  "motion_and_scrollytelling": {
+    "lenis_smooth_scroll": "Mandatory smooth momentum scrolling initialized globally.",
+    "framer_motion_variants": {
+      "fadeInUp": {
+        "initial": { "opacity": 0, "y": 35 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "viewport": { "once": true, "margin": "-80px" },
+        "transition": { "duration": 0.7, "ease": [0.215, 0.61, 0.355, 1] }
+      },
+      "staggerContainer": {
+        "initial": {},
+        "whileInView": { "transition": { "staggerChildren": 0.12 } }
+      }
+    }
+  },
+  "photography_and_media": {
+    "portrait_treatment": "Executive spotlight treatment: Monochrome / warm-toned high-contrast executive framing with geometric accent grid background, gold/pine stroke border, and subtle noise grain overlay.",
+    "image_urls": {
+      "hero_dubai_architecture": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dubai_skyline_dusk": "https://images.unsplash.com/photo-1634007626524-f47fa37810a7?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "executive_office_abstract": "https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?crop=entropy&cs=srgb&fm=jpg&q=85"
+    }
+  },
+  "monogram_and_favicon": {
+    "concept": "Interlocking geometric 'YT' & 'CA' initials inside a solid Deep Navy (#042C53) octagonal financial seal with Pine Green (#0F6E56) precision border.",
+    "favicon_svg_markup": "<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='32' height='32' rx='6' fill='#042C53'/><path d='M8 9H24V11H17V23H15V11H8V9Z' fill='#E1F5EE'/><path d='M19 14L23 23H20.7L19.8 21H16.2L15.3 23H13L17 14H19ZM18 16.8L16.9 19.3H19.1L18 16.8Z' fill='#85B7EB'/><circle cx='25' cy='7' r='2' fill='#0F6E56'/></svg>"
+  },
+  "ai_chat_widget": {
+    "name": "Ask Yogesh's AI Assistant",
+    "claude_integration": "Interactive floating assistant initialized with CA Yogesh's full profile knowledge, fractional CFO pricing structure, UAE VAT & FTA rules, and financial health check booking flow.",
+    "styling": {
+      "launcher_button": "Fixed bottom-6 right-6 z-50 rounded-full bg-[#042C53] text-[#E1F5EE] shadow-2xl border border-[#0F6E56]/40 p-4 hover:scale-105 transition-all flex items-center gap-3",
+      "chat_window": "Fixed bottom-24 right-6 w-96 max-w-[calc(100vw-2rem)] h-[540px] rounded-2xl bg-white shadow-2xl border border-[#D3D1C7] flex flex-col z-50 overflow-hidden backdrop-blur-xl"
+    }
+  },
+  "testing_attributes": {
+    "convention": "kebab-case data-testid for all interactive elements",
+    "key_test_ids": [
+      "nav-brand-logo",
+      "nav-health-check-cta",
+      "hero-headline",
+      "hero-primary-cta",
+      "stats-strip-container",
+      "problem-card-1",
+      "problem-card-2",
+      "problem-card-3",
+      "problem-card-4",
+      "ai-dark-callout",
+      "timeline-item-2026",
+      "ai-chat-launcher-button",
+      "ai-chat-input-field",
+      "ai-chat-send-button",
+      "ai-chat-suggested-prompt-1",
+      "footer-email-button",
+      "footer-phone-link"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page landing page for CA Yogesh Pannalal Trivedi using React and Tailwind CSS.",
+    "Use Google Fonts Cormorant Garamond / Plus Jakarta Sans / JetBrains Mono.",
+    "Ensure Lenis smooth momentum scrolling is initialized on mount.",
+    "Ensure framer-motion is used for stagger reveals and micro-hover interactions.",
+    "Implement the floating Claude AI chat widget with interactive quick prompts (e.g., 'What is a Fractional CFO rate?', 'How do you fix UAE VAT drift?', 'Book a Health Check').",
+    "All buttons and interactive cards MUST contain proper data-testid attributes.",
+    "Save design guidelines file strictly at /app/design_guidelines.json."
+  ]
+}
