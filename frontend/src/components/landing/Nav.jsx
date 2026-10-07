@@ -10,6 +10,7 @@ const links = [
   { id: "process", label: "How I work" },
   { id: "results", label: "Results" },
   { id: "career", label: "Career" },
+  { id: "booking", label: "Book a call" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -65,7 +66,7 @@ export const Nav = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <button data-testid="nav-health-check-cta" onClick={() => go("contact")} className="btn-pill btn-navy !py-2.5 !px-5 text-xs sm:text-sm">
+          <button data-testid="nav-health-check-cta" onClick={() => go("booking")} className="btn-pill btn-navy !py-2.5 !px-5 text-xs sm:text-sm">
             Book a Health Check
           </button>
           <button

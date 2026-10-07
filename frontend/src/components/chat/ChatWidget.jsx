@@ -4,8 +4,23 @@ import { MessageSquareText, X, Send, RotateCcw, Sparkles } from "lucide-react";
 import { useChat } from "./useChat";
 import { chatPrompts } from "@/data/profile";
 import { Logo } from "../landing/Logo";
+import { LeadForm } from "../landing/LeadForm";
 
 const EASE = [0.215, 0.61, 0.355, 1];
+
+const LeadCard = ({ sessionId }) => (
+  <motion.div
+    data-testid="chat-lead-card"
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.4, ease: EASE }}
+    className="rounded-2xl border border-[#0F6E56]/40 bg-[#F8F7F4] p-4"
+  >
+    <p className="font-serif text-lg font-semibold text-[#042C53] leading-tight">Leave your details</p>
+    <p className="mt-1 mb-4 text-xs text-[#5F5E5A] leading-relaxed">Yogesh will reply personally to arrange the free 20-minute conversation.</p>
+    <LeadForm source="chat" sessionId={sessionId} compact />
+  </motion.div>
+);
 
 const Bubble = ({ m }) => {
   const isUser = m.role === "user";
@@ -37,7 +52,7 @@ const Bubble = ({ m }) => {
 export const ChatWidget = () => {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
-  const { messages, send, reset, streaming, error } = useChat();
+  const { messages, send, reset, streaming, error, sessionId } = useChat();
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -105,9 +120,9 @@ export const ChatWidget = () => {
                   </div>
                 </div>
               )}
-              {messages.map((m) => (
-                <Bubble key={m.id} m={m} />
-              ))}
+              {messages.map((m) =>
+                m.role === "lead_form" ? <LeadCard key={m.id} sessionId={sessionId} /> : <Bubble key={m.id} m={m} />
+              )}
               {error && (
                 <p data-testid="ai-chat-error" className="text-xs text-red-600 bg-red-50 rounded-lg px-3 py-2">
                   {error}

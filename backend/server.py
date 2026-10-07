@@ -11,6 +11,7 @@ load_dotenv(ROOT_DIR / '.env')
 
 from database import client  # noqa: E402
 from routes.chat import router as chat_router  # noqa: E402
+from routes.leads import router as leads_router  # noqa: E402
 
 app = FastAPI(title="CA Yogesh Trivedi — API")
 api_router = APIRouter(prefix="/api")
@@ -22,6 +23,7 @@ async def root():
 
 
 api_router.include_router(chat_router)
+api_router.include_router(leads_router)
 app.include_router(api_router)
 
 app.add_middleware(

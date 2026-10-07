@@ -17,6 +17,15 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/chat", tags=["chat"])
 
 MAX_HISTORY = 30
+LEAD_TOKEN = "[[LEAD_FORM]]"
+
+
+def _split_pending(pending: str):
+    """Return (emit, keep) so a marker split across deltas is never leaked."""
+    for n in range(min(len(LEAD_TOKEN) - 1, len(pending)), 0, -1):
+        if LEAD_TOKEN.startswith(pending[-n:]):
+            return pending[:-n], pending[-n:]
+    return pending, ""
 
 
 class ChatMessage(BaseModel):
@@ -71,11 +80,19 @@ async def stream_chat(req: ChatRequest):
 
     async def event_generator():
         full = []
+        pending = ""
+        lead_form = False
         try:
             async for ev in chat.stream_message(UserMessage(text=req.message)):
                 if isinstance(ev, TextDelta):
-                    full.append(ev.content)
-                    yield f"data: {json.dumps({'delta': ev.content})}\n\n"
+                    pending += ev.content
+                    if LEAD_TOKEN in pending:
+                        pending = pending.replace(LEAD_TOKEN, "")
+                        lead_form = True
+                    emit, pending = _split_pending(pending)
+                    if emit:
+                        full.append(emit)
+                        yield f"data: {json.dumps({'delta': emit})}\n\n"
                 elif isinstance(ev, StreamDone):
                     break
         except Exception as exc:  # surface provider errors to the client
@@ -83,11 +100,15 @@ async def stream_chat(req: ChatRequest):
             yield f"data: {json.dumps({'error': str(exc)})}\n\n"
             return
 
-        text = "".join(full)
+        if pending:
+            full.append(pending)
+            yield f"data: {json.dumps({'delta': pending})}\n\n"
+
+        text = "".join(full).rstrip()
         if text:
             assistant_msg = ChatMessage(session_id=req.session_id, role="assistant", content=text)
             await db.chat_messages.insert_one(assistant_msg.model_dump())
-        yield f"data: {json.dumps({'done': True})}\n\n"
+        yield f"data: {json.dumps({'done': True, 'lead_form': lead_form})}\n\n"
 
     return StreamingResponse(
         event_generator(),

@@ -35,7 +35,7 @@ export const Problems = () => (
               <p className={`mt-5 text-base leading-relaxed max-w-md ${i === 0 ? "text-[#B5D4F4]" : "text-[#444441]"}`}>{p.body}</p>
               <button
                 data-testid={`problem-card-${i + 1}-cta`}
-                onClick={() => scrollToId("contact")}
+                onClick={() => scrollToId("booking")}
                 className={`mt-8 inline-flex items-center gap-2 text-sm font-semibold ${i === 0 ? "text-[#E1F5EE]" : "text-[#0F6E56]"}`}
               >
                 Talk about this

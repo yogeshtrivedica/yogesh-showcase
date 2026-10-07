@@ -74,6 +74,9 @@ export const useChat = () => {
             const payload = JSON.parse(line.slice(5));
             if (payload.delta) append(payload.delta);
             if (payload.error) throw new Error(payload.error);
+            if (payload.done && payload.lead_form) {
+              setMessages((prev) => [...prev, { role: "lead_form", content: "", id: crypto.randomUUID() }]);
+            }
           }
         }
       } catch (e) {
@@ -99,5 +102,5 @@ export const useChat = () => {
     setError(null);
   }, [sessionId]);
 
-  return { messages, send, reset, streaming, error };
+  return { messages, send, reset, streaming, error, sessionId };
 };

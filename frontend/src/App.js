@@ -8,6 +8,7 @@ import { Problems, Value } from "@/components/landing/Problems";
 import { Process, Automation } from "@/components/landing/Process";
 import { Results, Career, Credentials } from "@/components/landing/Results";
 import { Contact } from "@/components/landing/Contact";
+import { Booking } from "@/components/landing/Booking";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Results />
         <Career />
         <Credentials />
+        <Booking />
         <Contact />
       </main>
       <ChatWidget />

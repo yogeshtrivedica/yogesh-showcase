@@ -81,7 +81,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE, delay: 2.15 }}
           >
-            <button data-testid="hero-primary-cta" onClick={() => scrollToId("contact")} className="btn-pill btn-navy">
+            <button data-testid="hero-primary-cta" onClick={() => scrollToId("booking")} className="btn-pill btn-navy">
               Start with a Health Check <ArrowUpRight size={16} />
             </button>
             <button data-testid="hero-secondary-cta" onClick={() => scrollToId("problems")} className="btn-pill btn-ghost">
