@@ -30,6 +30,7 @@ Owners of UAE / East-African owner-run businesses evaluating an independent fina
 - Full landing page with all profile content, preloader curtain + masked hero reveal, Lenis, marquee, stats, 4 problem cards, value grid, process, dark automation callout, results, career timeline, credentials, contact footer (copy email, tel, LinkedIn).
 - Claude Sonnet 5.5 chat assistant with streaming + Mongo persistence + reset.
 
+- Real headshot added at `frontend/public/portrait.jpg` (800x800 square crop from user's upload) — shown in hero spotlight frame.
+
 ## Backlog
-- P1: Real portrait photo (`/public/portrait.jpg`) from the user.
 - P2: Contact/booking form (email via Resend), analytics, SEO/OG tags, lead capture from chat.
