@@ -1,10 +1,11 @@
 import { useState } from "react";
-import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, CheckCircle2, Loader2 } from "lucide-react";
-import { problems } from "@/data/profile";
+import { problems, profile } from "@/data/profile";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+// Free form-to-email relay (formsubmit.co). Leads arrive in the inbox below.
+// The very first submission triggers a one-time activation email to that address.
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${profile.email}`;
 const EASE = [0.215, 0.61, 0.355, 1];
 
 const Field = ({ id, label, compact, ...props }) => (
@@ -21,7 +22,7 @@ const Field = ({ id, label, compact, ...props }) => (
   </label>
 );
 
-export const LeadForm = ({ source = "booking", sessionId, compact = false, onSuccess }) => {
+export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", interest: "", message: "" });
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState("");
@@ -31,17 +32,29 @@ export const LeadForm = ({ source = "booking", sessionId, compact = false, onSuc
 
   const submit = async (e) => {
     e.preventDefault();
+    if (e.currentTarget.elements._honey?.value) return; // bot trap
     setStatus("loading");
     setError("");
     try {
-      const payload = Object.fromEntries(Object.entries(form).filter(([, v]) => v.trim() !== ""));
-      await axios.post(`${API}/leads`, { ...payload, source, session_id: sessionId || undefined });
+      const fields = Object.fromEntries(Object.entries(form).filter(([, v]) => v.trim() !== ""));
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          ...fields,
+          _subject: `New website enquiry from ${form.name}`,
+          _replyto: form.email,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || String(data.success) === "false") throw new Error(data.message || "send failed");
       setStatus("success");
       onSuccess?.();
-    } catch (err) {
+    } catch {
       setStatus("idle");
-      const detail = err.response?.data?.detail;
-      setError(typeof detail === "string" ? detail : "Could not send your request. Please email yogeshtrivedica@gmail.com directly.");
+      setError(`Could not send your request. Please email ${profile.email} directly.`);
     }
   };
 
@@ -72,6 +85,7 @@ export const LeadForm = ({ source = "booking", sessionId, compact = false, onSuc
           exit={{ opacity: 0 }}
           className={compact ? "space-y-3" : "space-y-5"}
         >
+          <input type="text" name="_honey" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
           <div className={`grid gap-${compact ? "3" : "5"} ${compact ? "" : "sm:grid-cols-2"}`}>
             <Field id={`${prefix}-name`} label="Name" compact={compact} required minLength={2} value={form.name} onChange={set("name")} placeholder="Your name" />
             <Field id={`${prefix}-email`} label="Email" compact={compact} type="email" required value={form.email} onChange={set("email")} placeholder="you@company.com" />

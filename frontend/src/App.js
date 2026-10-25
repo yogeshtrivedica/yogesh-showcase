@@ -9,7 +9,6 @@ import { Process, Automation } from "@/components/landing/Process";
 import { Results, Career, Credentials } from "@/components/landing/Results";
 import { Contact } from "@/components/landing/Contact";
 import { Booking } from "@/components/landing/Booking";
-import { ChatWidget } from "@/components/chat/ChatWidget";
 
 function App() {
   useLenis();
@@ -33,7 +32,6 @@ function App() {
         <Booking />
         <Contact />
       </main>
-      <ChatWidget />
     </div>
   );
 }
