@@ -4,9 +4,9 @@ export const profile = {
   eyebrow: "Independent finance review · Fractional CFO · Dubai",
   credentials: "Chartered Accountant (ICAI, 2008) · M.Com · 17+ years · UAE, East Africa, India",
   headline: ["Your system says", "you made a profit.", "Your bank may disagree."],
-  sub: "I find where your reports and your reality have drifted apart — and fix it before your bank, auditor or the FTA does.",
+  sub: "I find where your reports and your reality have drifted apart, and fix it before your bank, auditor or the FTA does.",
   intro:
-    "I have led finance for owner-run groups in trading, fit-out, logistics, petroleum and education — as Group CFO, Finance Controller and twice as a fractional CFO. I don't replace your accountant or your software. I check them, and I build automated controls so problems surface every month, not at year-end.",
+    "I have led finance for owner-run groups in trading, fit-out, logistics, petroleum and education, as Group CFO, Finance Controller and twice as a fractional CFO. I don't replace your accountant or your software. I check them, and I build automated controls so problems surface every month, not at year-end.",
   phone: "+971 55 331 0567",
   phoneHref: "tel:+971553310567",
   email: "yogeshtrivedica@gmail.com",
@@ -52,12 +52,12 @@ export const problems = [
   {
     tag: "Cash Diagnostic",
     title: "Profitable on paper. Short of cash every month-end.",
-    body: "Where cash is tied up — customers, stock or bank facilities — and a 13-week forecast your team keeps updating.",
+    body: "Where your cash is tied up (customers, stock or bank facilities), plus a 13-week forecast your team keeps updated.",
   },
   {
     tag: "Fractional CFO",
     title: "You have an accountant. You don't have a CFO.",
-    body: "Monthly owner review, budgets, bank reporting and audit-ready books — senior finance leadership without a full-time salary.",
+    body: "Monthly owner review, budgets, bank reporting and audit-ready books. Senior finance leadership without a full-time salary.",
   },
   {
     tag: "Capital readiness",
@@ -86,19 +86,19 @@ export const results = [
   { value: "150+ → <120 days", body: "Customer collection time cut through credit terms and a collections routine.", place: "UAE fit-out group" },
   { value: "Group ERP rollout", body: "Finance, projects and inventory in one system across entities.", place: "UAE" },
   { value: "80% VAT recovered", body: "Input VAT on a capital project, through direct work with the tax authority.", place: "Mozambique" },
-  { value: "3–4 days saved", body: "Per cross-border delivery, via agent network and digital proof of delivery.", place: "East Africa" },
+  { value: "3-4 days saved", body: "Per cross-border delivery, via agent network and digital proof of delivery.", place: "East Africa" },
   { value: "Clean compliance", body: "VAT, payroll taxes and social security with no adverse findings; Big 4 audits.", place: "Tanzania" },
   { value: "Lower funding cost", body: "Capital project borrowing moved to USD from local currency.", place: "Mozambique" },
 ];
 
 export const career = [
-  { years: "2026 – now", role: "Founder, TGM Accounting & Auditing LLC, Dubai", detail: "Virtual CFO, Finance Health Check and Business Strategist", current: true },
-  { years: "2025 – 2026", role: "Group Finance Manager, Joga Ram Group, Dubai", detail: "building materials, joinery, fit-out" },
-  { years: "2021 – 2025", role: "CFO (fractional, then full-time), Eaglite General Trading, Dubai", detail: "three-country trading group" },
+  { years: "2026 - now", role: "Founder, TGM Accounting & Auditing LLC, Dubai", detail: "Virtual CFO, Finance Health Check and Business Strategist", current: true },
+  { years: "2025 - 2026", role: "Group Finance Manager, Joga Ram Group, Dubai", detail: "building materials, joinery, fit-out" },
+  { years: "2021 - 2025", role: "CFO (fractional, then full-time), Eaglite General Trading, Dubai", detail: "three-country trading group" },
   { years: "2022", role: "Fractional CFO, Lake Trans Logistics", detail: "five East African countries" },
-  { years: "2016 – 2020", role: "Finance Manager, Sharaf Group", detail: "Tanzania and Mozambique" },
-  { years: "2012 – 2015", role: "Finance Controller, Export Trading Group", detail: "Tanzania" },
-  { years: "2009 – 2012", role: "Finance Controller, Acer Petroleum, Tanzania", detail: "Finance Manager, Karnavati University, India" },
+  { years: "2016 - 2020", role: "Finance Manager, Sharaf Group", detail: "Tanzania and Mozambique" },
+  { years: "2012 - 2015", role: "Finance Controller, Export Trading Group", detail: "Tanzania" },
+  { years: "2009 - 2012", role: "Finance Controller, Acer Petroleum, Tanzania", detail: "Finance Manager, Karnavati University, India" },
 ];
 
 export const credentials = {

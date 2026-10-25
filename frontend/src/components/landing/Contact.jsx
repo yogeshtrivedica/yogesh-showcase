@@ -29,7 +29,7 @@ export const Contact = () => {
             I review your data without changing anything in your system.
           </h2>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-[#B5D4F4] leading-relaxed">
-            You get a short, prioritised findings note with every exposure valued in dirhams — then you decide. The first 20-minute conversation costs nothing.
+            You get a short, prioritised findings note with every exposure valued in dirhams. Then you decide. The first 20-minute conversation costs nothing.
           </p>
         </Reveal>
 

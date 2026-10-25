@@ -15,7 +15,7 @@ export const Booking = () => (
         <SectionHeader
           eyebrow="Book the first conversation"
           title="Tell me which numbers you rely on. I'll tell you where to look."
-          intro="A free 20-minute call to decide whether a Financial Health Check is worth your time. Fill in the form and Yogesh replies personally, usually within one working day."
+          intro="A free 20-minute call to decide whether a Financial Health Check is worth your time. Fill in the form and I will reply personally, usually within one working day."
         />
         <Reveal delay={0.15} className="mt-10 space-y-4">
           {points.map(({ icon: Icon, text }) => (

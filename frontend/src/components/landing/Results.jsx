@@ -8,7 +8,7 @@ export const Results = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
       <SectionHeader
         eyebrow="Results from inside operating businesses"
-        title="Not advice from the outside. Numbers moved from the inside."
+        title="Numbers I have changed while working inside these businesses."
       />
       <StaggerGroup className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5" delay={0.1}>
         {results.map((r, i) => (
@@ -36,7 +36,7 @@ export const Career = () => (
   <section id="career" data-testid="career-section" className="bg-[#F8F7F4] py-24 lg:py-32">
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 grid lg:grid-cols-12 gap-12">
       <div className="lg:col-span-4 lg:sticky lg:top-28 self-start">
-        <SectionHeader eyebrow="Career" title="Seventeen years, three continents, one discipline." />
+        <SectionHeader eyebrow="Career" title="17 years in finance across the UAE, East Africa and India." />
       </div>
       <div className="lg:col-span-8">
         <StaggerGroup className="relative border-l border-[#D3D1C7]" delay={0.08}>
