@@ -10,7 +10,7 @@ const EASE = [0.215, 0.61, 0.355, 1];
 
 const Field = ({ id, label, compact, ...props }) => (
   <label className="block">
-    <span className={`block font-mono uppercase tracking-[0.18em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>{label}</span>
+    <span className={`block font-mono uppercase tracking-[0.08em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>{label}</span>
     <input
       id={id}
       data-testid={`${id}-input`}
@@ -97,7 +97,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
             </div>
           )}
           <label className="block">
-            <span className={`block font-mono uppercase tracking-[0.18em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>What would you like to talk about?</span>
+            <span className={`block font-mono uppercase tracking-[0.08em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>What would you like to talk about?</span>
             <select
               data-testid={`${prefix}-interest-select`}
               value={form.interest}
@@ -114,7 +114,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
           </label>
           {!compact && (
             <label className="block">
-              <span className="block font-mono text-[0.62rem] uppercase tracking-[0.18em] text-[#5F5E5A] mb-1.5">Anything I should know first? (optional)</span>
+              <span className="block font-mono text-[0.62rem] uppercase tracking-[0.08em] text-[#5F5E5A] mb-1.5">Anything I should know first? (optional)</span>
               <textarea
                 data-testid={`${prefix}-message-input`}
                 rows={4}

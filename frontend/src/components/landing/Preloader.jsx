@@ -17,7 +17,7 @@ export const Preloader = () => (
       transition={{ duration: 1.1, times: [0, 0.25, 0.8, 1], ease: EASE }}
     >
       <Logo size={64} light />
-      <p className="mt-6 font-mono text-[0.62rem] tracking-[0.35em] uppercase text-[#85B7EB]">Yogesh Trivedi · CA</p>
+      <p className="mt-6 font-mono text-[0.62rem] tracking-[0.14em] uppercase text-[#85B7EB]">Yogesh Trivedi · CA</p>
     </motion.div>
   </motion.div>
 );

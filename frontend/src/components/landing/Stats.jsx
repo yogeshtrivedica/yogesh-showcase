@@ -13,7 +13,7 @@ export const Stats = () => (
             i % 2 === 1 ? "border-l border-[#D3D1C7]/70 pl-6 lg:pl-8" : ""
           } ${i > 1 ? "border-t border-[#D3D1C7]/70 lg:border-t-0" : ""}`}
         >
-          <p className="font-mono text-[0.6rem] tracking-[0.3em] text-[#0F6E56] mb-4">0{i + 1}</p>
+          <p className="font-mono text-[0.6rem] tracking-[0.12em] text-[#0F6E56] mb-4">0{i + 1}</p>
           <p className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#042C53] leading-none tracking-tight">{s.value}</p>
           <p className="mt-4 text-sm text-[#5F5E5A] leading-relaxed max-w-[220px]">{s.label}</p>
         </Item>
@@ -41,7 +41,7 @@ export const Intro = () => (
             transition={{ duration: 1.2, ease: [0.215, 0.61, 0.355, 1] }}
           />
           <p className="text-lg md:text-xl text-[#2C2C2A] leading-relaxed">{profile.intro}</p>
-          <p className="mt-6 font-mono text-[0.68rem] tracking-[0.16em] uppercase text-[#5F5E5A]">{profile.credentials}</p>
+          <p className="mt-6 font-mono text-[0.68rem] tracking-[0.07em] uppercase text-[#5F5E5A]">{profile.credentials}</p>
         </div>
       </Reveal>
     </div>

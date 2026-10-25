@@ -44,7 +44,7 @@ export const Contact = () => {
             <span className="w-10 h-10 rounded-xl bg-[#0F6E56] flex items-center justify-center">
               {copied ? <Check size={18} /> : <Copy size={18} />}
             </span>
-            <p className="mt-5 font-mono text-[0.62rem] tracking-[0.22em] uppercase text-[#85B7EB]">{copied ? "Copied" : "Email"}</p>
+            <p className="mt-5 font-mono text-[0.62rem] tracking-[0.1em] uppercase text-[#85B7EB]">{copied ? "Copied" : "Email"}</p>
             <p className="mt-2 text-sm sm:text-base break-all text-[#E1F5EE]">{profile.email}</p>
           </motion.button>
 
@@ -58,7 +58,7 @@ export const Contact = () => {
             <span className="w-10 h-10 rounded-xl bg-[#0F6E56] flex items-center justify-center">
               <Phone size={18} />
             </span>
-            <p className="mt-5 font-mono text-[0.62rem] tracking-[0.22em] uppercase text-[#85B7EB]">Phone · WhatsApp</p>
+            <p className="mt-5 font-mono text-[0.62rem] tracking-[0.1em] uppercase text-[#85B7EB]">Phone · WhatsApp</p>
             <p className="mt-2 text-sm sm:text-base text-[#E1F5EE]">{profile.phone}</p>
           </motion.a>
 
@@ -74,7 +74,7 @@ export const Contact = () => {
             <span className="w-10 h-10 rounded-xl bg-[#0F6E56] flex items-center justify-center">
               <Linkedin size={18} />
             </span>
-            <p className="mt-5 font-mono text-[0.62rem] tracking-[0.22em] uppercase text-[#85B7EB]">LinkedIn</p>
+            <p className="mt-5 font-mono text-[0.62rem] tracking-[0.1em] uppercase text-[#85B7EB]">LinkedIn</p>
             <p className="mt-2 text-sm sm:text-base text-[#E1F5EE] flex items-center gap-1">
               cayogeshtrivedi <ArrowUpRight size={14} />
             </p>
@@ -88,7 +88,7 @@ export const Contact = () => {
             <Logo size={28} light />
             <span className="font-serif text-base text-[#E1F5EE]">{profile.name}</span>
           </div>
-          <p className="font-mono text-[0.62rem] tracking-[0.2em] uppercase text-[#85B7EB]">
+          <p className="font-mono text-[0.62rem] tracking-[0.08em] uppercase text-[#85B7EB]">
             Dubai · UAE · © {new Date().getFullYear()}
           </p>
         </div>

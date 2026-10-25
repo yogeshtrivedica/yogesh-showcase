@@ -21,7 +21,7 @@ export const Results = () => (
             >
               <p className="font-serif text-3xl sm:text-4xl font-semibold text-[#042C53] tracking-tight leading-none">{r.value}</p>
               <p className="mt-5 text-sm md:text-base text-[#444441] leading-relaxed flex-1">{r.body}</p>
-              <p className="mt-6 flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.2em] uppercase text-[#0F6E56]">
+              <p className="mt-6 flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.08em] uppercase text-[#0F6E56]">
                 <MapPin size={12} /> {r.place}
               </p>
             </motion.article>
@@ -51,7 +51,7 @@ export const Career = () => (
                   c.current ? "bg-[#0F6E56] ring-4 ring-[#E1F5EE]" : "bg-[#D3D1C7] group-hover:bg-[#042C53]"
                 } transition-colors duration-300`}
               />
-              <span className="font-mono text-[0.68rem] tracking-[0.18em] uppercase text-[#5F5E5A] pt-1">{c.years}</span>
+              <span className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-[#5F5E5A] pt-1">{c.years}</span>
               <div>
                 <p className={`font-serif text-xl sm:text-2xl font-semibold tracking-tight ${c.current ? "text-[#0F6E56]" : "text-[#042C53]"}`}>{c.role}</p>
                 <p className="mt-1 text-sm text-[#444441]">{c.detail}</p>

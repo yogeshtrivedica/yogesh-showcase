@@ -25,7 +25,7 @@ export const Problems = () => (
                 i === 0 ? "bg-[#042C53] border-[#042C53] text-white" : "bg-white border-[#D3D1C7] hover:border-[#0F6E56]"
               }`}
             >
-              <span className={`absolute top-8 right-8 font-mono text-[0.62rem] tracking-[0.3em] ${i === 0 ? "text-[#85B7EB]" : "text-[#5F5E5A]"}`}>
+              <span className={`absolute top-8 right-8 font-mono text-[0.62rem] tracking-[0.12em] ${i === 0 ? "text-[#85B7EB]" : "text-[#5F5E5A]"}`}>
                 0{i + 1}
               </span>
               <p className={`eyebrow ${i === 0 ? "!text-[#85B7EB]" : ""}`}>{p.tag}</p>
