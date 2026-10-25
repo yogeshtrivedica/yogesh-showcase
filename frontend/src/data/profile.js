@@ -106,10 +106,3 @@ export const credentials = {
   tools: ["ERPNext", "Tally", "SAGE", "Power BI", "Advanced Excel", "Claude AI"],
   languages: ["English", "Hindi", "Gujarati", "Marwari", "Swahili (working)", "Portuguese (working)"],
 };
-
-export const chatPrompts = [
-  "What is a Financial Health Check?",
-  "How does a fractional CFO engagement work?",
-  "Can you help with UAE VAT and Corporate Tax?",
-  "What results have you delivered before?",
-];
