@@ -10,7 +10,7 @@ const EASE = [0.215, 0.61, 0.355, 1];
 
 const Field = ({ id, label, compact, ...props }) => (
   <label className="block">
-    <span className={`block font-mono uppercase tracking-[0.18em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>{label}</span>
+    <span className={`block font-mono uppercase tracking-[0.08em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>{label}</span>
     <input
       id={id}
       data-testid={`${id}-input`}
@@ -72,7 +72,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
           <CheckCircle2 className="text-[#0F6E56]" size={compact ? 22 : 32} />
           <p className={`mt-3 font-serif font-semibold text-[#042C53] ${compact ? "text-lg" : "text-2xl"}`}>Request received.</p>
           <p className={`mt-2 leading-relaxed ${compact ? "text-sm" : "text-base"}`}>
-            Thank you, {form.name.split(" ")[0]}. Yogesh will reply to {form.email} to arrange the 20-minute conversation.
+            Thank you, {form.name.split(" ")[0]}. I will reply to {form.email} to set up our 20-minute call.
           </p>
         </motion.div>
       ) : (
@@ -97,7 +97,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
             </div>
           )}
           <label className="block">
-            <span className={`block font-mono uppercase tracking-[0.18em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>What would you like to talk about?</span>
+            <span className={`block font-mono uppercase tracking-[0.08em] text-[#5F5E5A] mb-1.5 ${compact ? "text-[0.55rem]" : "text-[0.62rem]"}`}>What would you like to talk about?</span>
             <select
               data-testid={`${prefix}-interest-select`}
               value={form.interest}
@@ -106,7 +106,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
                 compact ? "px-3 py-2 text-sm" : "px-4 py-3 text-sm md:text-base"
               }`}
             >
-              <option value="">Not sure yet — let's talk</option>
+              <option value="">Not sure yet, let's talk</option>
               {problems.map((p) => (
                 <option key={p.tag} value={p.tag}>{p.tag}</option>
               ))}
@@ -114,7 +114,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
           </label>
           {!compact && (
             <label className="block">
-              <span className="block font-mono text-[0.62rem] uppercase tracking-[0.18em] text-[#5F5E5A] mb-1.5">Anything I should know first? (optional)</span>
+              <span className="block font-mono text-[0.62rem] uppercase tracking-[0.08em] text-[#5F5E5A] mb-1.5">Anything I should know first? (optional)</span>
               <textarea
                 data-testid={`${prefix}-message-input`}
                 rows={4}
@@ -141,7 +141,7 @@ export const LeadForm = ({ source = "booking", compact = false, onSuccess }) => 
           </button>
           {!compact && (
             <p className="text-xs text-[#5F5E5A] leading-relaxed">
-              No commitment. Your details go directly to Yogesh and are never shared.
+              No commitment. Your details come straight to me and are never shared.
             </p>
           )}
         </motion.form>

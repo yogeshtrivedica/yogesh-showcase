@@ -8,7 +8,7 @@ export const Results = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
       <SectionHeader
         eyebrow="Results from inside operating businesses"
-        title="Not advice from the outside. Numbers moved from the inside."
+        title="Numbers I have changed while working inside these businesses."
       />
       <StaggerGroup className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5" delay={0.1}>
         {results.map((r, i) => (
@@ -21,7 +21,7 @@ export const Results = () => (
             >
               <p className="font-serif text-3xl sm:text-4xl font-semibold text-[#042C53] tracking-tight leading-none">{r.value}</p>
               <p className="mt-5 text-sm md:text-base text-[#444441] leading-relaxed flex-1">{r.body}</p>
-              <p className="mt-6 flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.2em] uppercase text-[#0F6E56]">
+              <p className="mt-6 flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.08em] uppercase text-[#0F6E56]">
                 <MapPin size={12} /> {r.place}
               </p>
             </motion.article>
@@ -36,7 +36,7 @@ export const Career = () => (
   <section id="career" data-testid="career-section" className="bg-[#F8F7F4] py-24 lg:py-32">
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 grid lg:grid-cols-12 gap-12">
       <div className="lg:col-span-4 lg:sticky lg:top-28 self-start">
-        <SectionHeader eyebrow="Career" title="Seventeen years, three continents, one discipline." />
+        <SectionHeader eyebrow="Career" title="17 years in finance across the UAE, East Africa and India." />
       </div>
       <div className="lg:col-span-8">
         <StaggerGroup className="relative border-l border-[#D3D1C7]" delay={0.08}>
@@ -51,7 +51,7 @@ export const Career = () => (
                   c.current ? "bg-[#0F6E56] ring-4 ring-[#E1F5EE]" : "bg-[#D3D1C7] group-hover:bg-[#042C53]"
                 } transition-colors duration-300`}
               />
-              <span className="font-mono text-[0.68rem] tracking-[0.18em] uppercase text-[#5F5E5A] pt-1">{c.years}</span>
+              <span className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-[#5F5E5A] pt-1">{c.years}</span>
               <div>
                 <p className={`font-serif text-xl sm:text-2xl font-semibold tracking-tight ${c.current ? "text-[#0F6E56]" : "text-[#042C53]"}`}>{c.role}</p>
                 <p className="mt-1 text-sm text-[#444441]">{c.detail}</p>

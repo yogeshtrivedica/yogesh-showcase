@@ -8,7 +8,7 @@ export const Process = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
       <SectionHeader
         eyebrow="How I work"
-        title="Four steps. You stay in control at every one."
+        title="How we work together. You decide at every step."
         intro="Nothing in your system changes until you have seen the findings and decided what is worth fixing."
       />
       <StaggerGroup className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8" delay={0.14}>
@@ -25,7 +25,7 @@ export const Process = () => (
                 transition={{ duration: 1, ease: EASE, delay: 0.2 + i * 0.2 }}
               />
             </motion.div>
-            <p className="mt-6 font-mono text-[0.65rem] tracking-[0.3em] text-[#0F6E56]">{s.n}</p>
+            <p className="mt-6 font-mono text-[0.65rem] tracking-[0.12em] text-[#0F6E56]">{s.n}</p>
             <h3 className="mt-3 font-serif text-2xl sm:text-3xl font-semibold text-[#042C53] tracking-tight">{s.title}</h3>
             <p className="mt-4 text-sm md:text-base text-[#444441] leading-relaxed">{s.body}</p>
           </Item>
@@ -39,7 +39,7 @@ const checks = [
   { icon: GitMerge, label: "Scheduled reconciliations" },
   { icon: ScanSearch, label: "Duplicate supplier & back-dated entry flags" },
   { icon: Gauge, label: "VAT-to-ledger tie-outs" },
-  { icon: Bot, label: "Owner dashboards — exceptions only" },
+  { icon: Bot, label: "Owner dashboards showing exceptions only" },
 ];
 
 export const Automation = () => (
@@ -51,12 +51,12 @@ export const Automation = () => (
         <SectionHeader
           light
           eyebrow="Controls and automation"
-          title="Automate the routine. Keep the judgement human."
+          title="Software runs the routine checks. I make the judgement calls."
           intro="I connect to the software you already use and build a checking layer around it. Only the exceptions reach a person."
         />
         <Reveal delay={0.2} className="mt-10 flex flex-wrap gap-2">
           {["ERPNext", "Tally", "SAGE", "Power BI", "Claude AI"].map((t) => (
-            <span key={t} data-testid={`automation-badge-${t.toLowerCase().replace(/\s/g, "-")}`} className="px-4 py-2 rounded-full border border-[#85B7EB]/40 text-[#E1F5EE] font-mono text-[0.65rem] tracking-[0.18em] uppercase hover:bg-[#0F6E56] hover:border-[#0F6E56] transition-colors duration-300">
+            <span key={t} data-testid={`automation-badge-${t.toLowerCase().replace(/\s/g, "-")}`} className="px-4 py-2 rounded-full border border-[#85B7EB]/40 text-[#E1F5EE] font-mono text-[0.65rem] tracking-[0.08em] uppercase hover:bg-[#0F6E56] hover:border-[#0F6E56] transition-colors duration-300">
               {t}
             </span>
           ))}

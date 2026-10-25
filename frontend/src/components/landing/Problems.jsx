@@ -12,7 +12,7 @@ export const Problems = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative">
       <SectionHeader
         eyebrow="Four problems I solve for owners"
-        title="Each one starts as a question you may already be asking."
+        title="Most owners call me with one of these questions."
       />
       <StaggerGroup className="mt-16 grid md:grid-cols-2 gap-5" delay={0.12}>
         {problems.map((p, i) => (
@@ -25,7 +25,7 @@ export const Problems = () => (
                 i === 0 ? "bg-[#042C53] border-[#042C53] text-white" : "bg-white border-[#D3D1C7] hover:border-[#0F6E56]"
               }`}
             >
-              <span className={`absolute top-8 right-8 font-mono text-[0.62rem] tracking-[0.3em] ${i === 0 ? "text-[#85B7EB]" : "text-[#5F5E5A]"}`}>
+              <span className={`absolute top-8 right-8 font-mono text-[0.62rem] tracking-[0.12em] ${i === 0 ? "text-[#85B7EB]" : "text-[#5F5E5A]"}`}>
                 0{i + 1}
               </span>
               <p className={`eyebrow ${i === 0 ? "!text-[#85B7EB]" : ""}`}>{p.tag}</p>
@@ -53,12 +53,12 @@ export const Value = () => (
   <section id="value" data-testid="value-section" className="bg-[#F8F7F4] py-24 lg:py-32">
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
       <div className="lg:col-span-4 lg:sticky lg:top-28">
-        <SectionHeader eyebrow="Where I add value" title="Six places the numbers usually drift." />
+        <SectionHeader eyebrow="Where I add value" title="Where I usually find problems" />
         <Reveal delay={0.2} className="mt-10 relative rounded-3xl overflow-hidden aspect-[4/3] hidden lg:block">
           <img src={images.planner} alt="Finance planner and budget sheets" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#042C53]/80 to-transparent" />
           <p className="absolute bottom-5 left-5 right-5 font-serif text-xl text-white leading-snug">
-            Every exposure valued in dirhams — then you decide.
+            Every exposure valued in dirhams. Then you decide.
           </p>
         </Reveal>
       </div>
