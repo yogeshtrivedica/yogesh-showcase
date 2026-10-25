@@ -92,7 +92,7 @@ export const results = [
 ];
 
 export const career = [
-  { years: "2026 – now", role: "Independent practice, Dubai", detail: "finance review, fractional CFO, capital readiness", current: true },
+  { years: "2026 – now", role: "Founder, TGM Accounting & Auditing LLC, Dubai", detail: "finance review, fractional CFO, capital readiness", current: true },
   { years: "2025 – 2026", role: "Group Finance Manager, Joga Ram Group, Dubai", detail: "building materials, joinery, fit-out" },
   { years: "2021 – 2025", role: "CFO (fractional, then full-time), Eaglite General Trading, Dubai", detail: "three-country trading group" },
   { years: "2022", role: "Fractional CFO, Lake Trans Logistics", detail: "five East African countries" },
