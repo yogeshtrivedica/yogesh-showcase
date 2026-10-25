@@ -48,7 +48,7 @@ export const Nav = () => {
           <Logo size={36} className="transition-transform duration-500 group-hover:rotate-[-6deg]" />
           <span className="hidden sm:block text-left leading-tight">
             <span className="block font-serif text-lg font-semibold text-[#042C53]">Yogesh Trivedi</span>
-            <span className="block font-mono text-[0.6rem] tracking-[0.08em] uppercase text-[#0F6E56]">CA · Fractional CFO</span>
+            <span className="block font-mono text-[0.6rem] tracking-[0.08em] uppercase text-[#0F6E56]">CA · Virtual/Fractional CFO</span>
           </span>
         </button>
 

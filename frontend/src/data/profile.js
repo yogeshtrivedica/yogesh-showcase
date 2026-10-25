@@ -1,7 +1,7 @@
 export const profile = {
   name: "CA Yogesh Pannalal Trivedi",
   shortName: "Yogesh Trivedi",
-  eyebrow: "Independent finance review · Fractional CFO · Dubai",
+  eyebrow: "Independent finance review · Virtual/Fractional CFO · Dubai",
   credentials: "Chartered Accountant (ICAI, 2008) · M.Com · 17+ years · UAE, East Africa, India",
   headline: ["Your system says", "you made a profit.", "Your bank may disagree."],
   sub: "I find where your reports and your reality have drifted apart, and fix it before your bank, auditor or the FTA does.",
@@ -40,7 +40,7 @@ export const marqueeItems = [
   "Bank & investor packs",
   "Month-end close",
   "AI-assisted controls",
-  "Fractional CFO",
+  "Virtual/Fractional CFO",
 ];
 
 export const problems = [
@@ -55,7 +55,7 @@ export const problems = [
     body: "Where your cash is tied up (customers, stock or bank facilities), plus a 13-week forecast your team keeps updated.",
   },
   {
-    tag: "Fractional CFO",
+    tag: "Virtual/Fractional CFO",
     title: "You have an accountant. You don't have a CFO.",
     body: "Monthly owner review, budgets, bank reporting and audit-ready books. Senior finance leadership without a full-time salary.",
   },
@@ -92,7 +92,7 @@ export const results = [
 ];
 
 export const career = [
-  { years: "2026 - now", role: "Founder, TGM Accounting & Auditing LLC, Dubai", detail: "Virtual CFO, Finance Health Check and Business Strategist", current: true },
+  { years: "2026 - now", role: "Founder, TGM Accounting & Auditing LLC, Dubai", detail: "Virtual/Fractional CFO, Finance Health Check and Business Strategist", current: true },
   { years: "2025 - 2026", role: "Group Finance Manager, Joga Ram Group, Dubai", detail: "building materials, joinery, fit-out" },
   { years: "2021 - 2025", role: "CFO (fractional, then full-time), Eaglite General Trading, Dubai", detail: "three-country trading group" },
   { years: "2022", role: "Fractional CFO, Lake Trans Logistics", detail: "five East African countries" },
